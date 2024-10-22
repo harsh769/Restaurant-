@@ -1,6 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { HiOutlineArrowRight } from "react-icons/hi";
+ 
 
 const About = () => {
   return (
@@ -10,26 +8,21 @@ const About = () => {
           <div className="banner">
             <div className="top">
               <h1 className="heading">ABOUT US</h1>
-              <p>The only thing we're serious about is food.</p>
+              <p className="mu">The only thing we're serious about is food.</p>
             </div>
             <p className="mid">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Provident possimus optio adipisci dolores impedit illum iusto
-              perferendis, laudantium quod accusamus consequuntur consectetur,
-              tempore nulla error iure reiciendis dolorem assumenda.
-              Necessitatibus fugit asperiores totam rem esse exercitationem
-              iusto ipsum qui dolore ex, accusantium repellat mollitia
-              repellendus.
+           We like to cook and serve a variety of Bangladeshi foods!! We're passionate about sharing the rich flavors and diverse culinary traditions of Bangladesh. From the aromatic spices to the fresh ingredients, we strive to bring the authentic taste of Bangladesh to your table.
+           We take pride in serving traditional Bangladeshi dishes, prepared with care and attention to detail.
             </p>
-            <Link to={"/"}>
+            {/* <Link to={"/Menu"}>
               Explore Menu{" "}
               <span>
                 <HiOutlineArrowRight />
               </span>
-            </Link>
+            </Link> */}
           </div>
           <div className="banner">
-            <img src="about.png" alt="about" />
+            <img src="three.jpeg" alt="about" />
           </div>
         </div>
       </section>

@@ -7,12 +7,44 @@
   margin: 0;
   padding: 0;
 }
-::-webkit-scrollbar{
-  display: none;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
+::-webkit-scrollbar-thumb {
+  background-color: #77776c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
 /********************** HERO SECTION COMPONENT STYLING **************************/
 /**********************************************************************************************************************/
+
+/* .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition:all 0.2s ease-in-out;
+
+}
+
+.btn:hover {
+  background-color: #0069d9;
+  border-color: #0069d9;
+}
+
+mu{
+  background-color: darkcyan;
+} */
 nav {
   display: flex;
   max-width: 1500px;
@@ -24,6 +56,7 @@ nav {
   align-items: center;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
+  background-color: darkgrey;
 }
 nav::after {
   content: "";
@@ -32,7 +65,9 @@ nav::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgb(201, 201, 201);
+  background-color: darkgrey;
+
+ 
 }
 nav .logo {
   flex: 1;
@@ -167,6 +202,7 @@ nav svg {
   background-size: cover;
   background-position: right;
   padding: 0 15px;
+  background-color: darkgrey;
 }
 .heroSection .container {
   display: flex;
@@ -330,7 +366,7 @@ nav svg {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #f9fbf2;
+  background-color: darkgrey;
 }
 .about .container {
   max-width: 1500px;
@@ -442,6 +478,7 @@ nav svg {
   padding: 75px 20px;
   justify-content: center;
   align-items: center;
+  background-color: darkgrey;
 }
 .qualities .container {
   min-width: 1500px;
@@ -514,6 +551,7 @@ nav svg {
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
+  background-color: darkgrey;
 }
 .menu .container {
   max-width: 1500px;
@@ -610,6 +648,7 @@ nav svg {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background-color: darkgrey;
 }
 .team .container {
   max-width: 1500px;
@@ -693,6 +732,7 @@ nav svg {
   justify-content: center;
   align-items: center;
   min-height: 80vh;
+  background-color: darkgrey;
 }
 .who_are_we .container {
   max-width: 1500px;
@@ -782,6 +822,7 @@ footer {
   align-items: center;
   height: fit-content;
   padding: 20px 20px 10px 20px;
+  background-color: darkgrey;
 }
 footer .container {
   max-width: 1500px;
@@ -861,6 +902,7 @@ footer .container .banner .right {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+  background-color: darkgrey;
 }
 .reservation .container {
   max-width: 1500px;
@@ -981,7 +1023,10 @@ footer .container .banner .right {
   text-decoration: none;
   font-size: 13px;
   color: #111;
-  background: transparent;
+  cursor: pointer;
+  background-color: rgb(97, 147, 56);
+  
+
   margin-top: 30px;
 }
 .reservation .container .banner .reservation_form_box form button span {

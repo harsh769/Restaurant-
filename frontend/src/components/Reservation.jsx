@@ -1,7 +1,6 @@
-import React from "react";
+ import  { useState } from "react";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import axios from "axios";
-import { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
@@ -15,27 +14,48 @@ const Reservation = () => {
   const navigate = useNavigate();
 
   const handleReservation = async (e) => {
+    // e.preventDefault(); // Prevents the form from refreshing the page
     e.preventDefault();
+    // console.log("Reservation clicked");
+    console.log("reservation clicked") // Debugging log
     try {
-      const { data } = await axios.post(
-        "http://localhost:4000/reservation/send",
-        { firstName, lastName, email, phone, date, time },
-        {
-          headers: {
-            "Content-Type": "application/json",
+      // const { data } = await axios.post(
+      //   "http://localhost:4000/reservation/send",
+      //   { firstName, lastName, email, phone, date, time },
+      //   {
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     withCredentials: true,
+      //   }
+      // );
+      const {data} = await axios.post(
+         "http://localhost:4000/reservation/send",
+
+         {firstName , lastName, email, phone, date, time},
+         { 
+          headers : { "Content-Type": "application/json",
           },
           withCredentials: true,
-        }
+         }
       );
+
+
+      console.log("Response received", data); // Debugging log
       toast.success(data.message);
+      // Reset form fields after successful reservation
       setFirstName("");
       setLastName("");
       setPhone(0);
       setEmail("");
       setTime("");
       setDate("");
-      navigate("/success");
+      // Navigate to success page
+      // navigate("/success");
+       navigate("/success");
+
     } catch (error) {
+      console.log("Error occurred", error.response); // Debugging log
       toast.error(error.response.data.message);
     }
   };
@@ -50,7 +70,8 @@ const Reservation = () => {
           <div className="reservation_form_box">
             <h1>MAKE A RESERVATION</h1>
             <p>For Further Questions, Please Call</p>
-            <form>
+            {/* Form handling submission using onSubmit */}
+            <form onSubmit={handleReservation}>
               <div>
                 <input
                   type="text"
@@ -94,7 +115,8 @@ const Reservation = () => {
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
-              <button type="submit" onClick={handleReservation}>
+              {/* Submit button triggers the form submission */}
+              <button type="submit" className="btn">
                 RESERVE NOW{" "}
                 <span>
                   <HiOutlineArrowNarrowRight />
