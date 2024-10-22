@@ -5,68 +5,68 @@
                 "id": 1,
                 "image": "./quality_food.svg",
                 "title": "QUALITY FOOD",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat." 
+                "description": " Indulge in the finest flavors, crafted with the utmost care." 
             },
             {
                 "id": 2,
                 "image": "./super_taste.svg",
                 "title": "SUPER TASTE",
-                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing sit amet elit. Sit voluptates quaerat pariatur." 
+                "description": " Taste the extraordinary. Experience the exceptional." 
             },
             {
                 "id": 3,
                 "image": "./fast_delivery.svg",
                 "title": "FAST DELIVERY",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat." 
+                "description": "Don't wait for your food, let it wait for you. Order now for lightning-fast delivery." 
             }
         ],
         "dishes": [
             {
                 "id": 1,
-                "image": "./dinner1.jpeg",
-                "title": "ROASTED LAMB RUMP",
+                "image": "./Khicuri (1).jpeg",
+                "title": "Khucuri with chicken",
                 "category": "Dinner"
             },
             {
                 "id": 2,
-                "image": "./dinner2.png",
-                "title": "CITRUS CURED SALMON",
+                "image": "./Khicuri (2).jpeg",
+                "title": "Rice with chicken",
                 "category": "Dinner"
             },
             {
                 "id": 3,
-                "image": "./breakfast1.png",
-                "title": "PAN SEARED SEA BASS",
+                "image": "./Khicuri (3).jpeg",
+                "title": "Mughlai porota",
                 "category": "Breakfast"
             },
             {
                 "id": 4,
-                "image": "./dinner3.png",
-                "title": "STUFFED STRAWBERRY",
+                "image": "./Khicuri (4).jpeg",
+                "title": "Full family dinner 1",
                 "category": "Dinner"
             },
             {
                 "id": 5,
-                "image": "./lunch1.png",
-                "title": "BEEF BURGER MEAL",
+                "image": "./Khicuri (5).jpeg",
+                "title": "Full family dinner 2",
                 "category": "Lunch"
             },
             {
                 "id": 6,
-                "image": "./dinner4.png",
-                "title": "MUSSELS SOUP",
+                "image": "./eggss.jpeg",
+                "title": "Eggs and fishes",
                 "category": "Dinner"
             },
             {
                 "id": 7,
-                "image": "./dinner5.png",
-                "title": "ITALIAN SPAGHETTI",
+                "image": "./msalad.jpeg",
+                "title": "Mutton salad",
                 "category": "Dinner"
             },
             {
                 "id": 8,
-                "image": "./dinner6.png",
-                "title": "GRILLED FISH",
+                "image": "./mutton.jpeg",
+                "title": "Mutton curry",
                 "category": "Dinner"
             }
         ],
@@ -74,26 +74,26 @@
             {
                 "id": 1,
                 "image": "./team_member_1.png",
-                "name": "JOHNATHAN TYLER",
-                "designation": "Founder & Head Chef"
+                "name": " JHON DOEE",
+                "designation": "Eggs and fishes"
             },
             {
                 "id": 2,
                 "image": "./team_member_2.png",
-                "name": "WADE WARREN",
-                "designation": "Sous Chef"
+                "name": "JHON DO",
+                "designation": "Meat and salad"
             },
             {
                 "id": 3,
                 "image": "./team_member_3.png",
-                "name": "JHON DOE",
-                "designation": "Fast Food Chef"
+                "name": "JHON DOES",
+                "designation": "Rice and biriyani"
             },
             {
                 "id": 4,
                 "image": "./team_member_4.png",
-                "name": "ALEX COAL",
-                "designation": "Senior Chef"
+                "name": "JHON DOESNOT",
+                "designation": "Vegetables"
             }
         ],
         "testimonials": [
@@ -122,22 +122,22 @@
         "who_we_are": [
             {
                 "id": 1,
-                "number": "14",
+                "number": "08",
                 "title": "Restaurants"
             },
             {
                 "id": 2,
                 "number": "20",
-                "title": "Chef In Kitchen"
+                "title": "Chefs In Kitchen"
             },
             {
                 "id": 3,
-                "number": "08",
+                "number": "05",
                 "title": "Years Of Experience"
             },
             {
                 "id": 4,
-                "number": "200",
+                "number": "120",
                 "title": "Food Dishes"
             }
         ],

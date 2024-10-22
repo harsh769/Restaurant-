@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import { data } from "../restApi.json";
 const Team = () => {
   return (
@@ -7,21 +7,34 @@ const Team = () => {
         <div className="heading_section">
           <h1 className="heading">OUR TEAM</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            fugit dicta, ipsum impedit quam laboriosam quas doloremque quia
-            perferendis laborum.
+            Our team consists of some of the finest chefs. They ensure the taste of the food as well as the quality of the food.
           </p>
         </div>
         <div className="team_container">
-          {data[0].team.map((element) => {
+          {/* {data[0].team.map((element) => {
             return (
               <div className="card" key={element.id}>
                 <img src={element.image} alt={element.name} />
                 <h3>{element.name}</h3>
-                <p>{element.designation}</p>
+                <p>{element.designation}</p>  
               </div>
             );
-          })}
+          })} */}
+         {
+          data[0].team.map((element)=>{
+            return(
+              <div className="card" key={element.id}>
+                <img src={element.image} alt={element.name} />
+                <h3>{element.name}</h3>
+                <p>{element.designation}</p>
+
+
+              </div>
+            )
+          })
+         }
+
+
         </div>
       </div>
     </section>
